@@ -42,7 +42,7 @@ connectomix_cmd='/path/to/connectomix/connectomix/connectomix.py'
 
 Second, set-up paths to config directory:
 ```bash
-config_dir='/code/ds005625/connectomix/config'
+config_dir='/data/ds005625/code/connectomix/config'
 ```
 
 #### Participant-level
