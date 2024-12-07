@@ -1,0 +1,38 @@
+# Connectomix test dataset 2
+
+This dataset is designed to test features of Connectomix. For more information, please visit the GitHub repository:
+
+[https://github.com/ln2t/connectomix](https://github.com/ln2t/connectomix)
+
+The dataset contains data for 4 participants.
+
+## Rawdata
+
+- Anatomical: T1w image (defaced)
+- Functional: A standard 6 minutes resting-state scan
+- Groups: the participants are split in `control` and `patient` groups. This split has been done artificially and serves only testing purposes.
+
+## Config file
+
+- For the participant-level analysis, the configuration file to run Connectomix is located at `code/connectomix/config/default_participant_level_config.yml`. Note that this is the default configuration file, created e.g. using the `--autonomous` mode.
+- For the group-level analysis, we used `code/connectomix/config/group_level_config.yml`
+
+## Derivatives
+
+- fMRIPrep: preprocessed data with fMRIPrep are located at `derivatives/fmriprep`
+- Connectomix
+
+## Commands
+
+The exact commands to run the analyses depends on you installation of Connectomix. We show here the simplest version of the commands, assuming you adapt those depending on your setup (e.g. if you use Docker).
+The dataset is assumed to be located at `/data/dsXXX-2`.
+
+- Participant-level analysis:
+```bash
+python connectomix.py /data/dsXXX-2 /data/dsXXX-2/derivatives/connectomix participant --config /data/dsXXX-2/code/config/default_participant_level_config.yml
+```
+
+- Group-level analysis - **Independent two-samples t-test**:
+```bash
+python connectomix.py /data/dsXXX-2 /data/dsXXX-2/derivatives/connectomix participant --config /data/dsXXX-2/code/config/group_level_config.yml
+```

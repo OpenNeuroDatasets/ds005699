@@ -1,0 +1,16 @@
+{
+    "Name": "Connectomix test dataset 2",
+    "BIDSVersion": "1.2.0",
+    "License": "CC0",
+    "Authors": [
+        "Rovai, Antonin"
+    ],
+    "Acknowledgments": "",
+    "HowToAcknowledge": "",
+    "Funding": [
+    ],
+    "ReferencesAndLinks": [
+        ""
+    ],
+    "DatasetDOI": ""
+}
