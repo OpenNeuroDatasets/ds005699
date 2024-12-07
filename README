@@ -33,7 +33,7 @@ fmriprep $bids_dir ${derivatives_dir}/fmriprep participant --fs-license-file /pa
 ```
 
 ### Analysis: connectomix
-*Note:* The following has been tested for connectomix version 1.???.
+*Note:* The following has been tested for connectomix version 1.0.1.
 
 First set-up path to connectomix script:
 ```bash
