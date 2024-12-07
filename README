@@ -23,8 +23,8 @@ We show here the simplest version of the commands, assuming you adapt those depe
 
 We also assume that the data are at the following locations:
 ```bash
-bids_dir='/data/dsXXX'
-derivatives_dir='/data/dsXXX/derivatives'
+bids_dir='/data/ds005699'
+derivatives_dir='/data/ds005699/derivatives'
 ```
 
 ### Preprocessing (fMRIPrep)
@@ -47,11 +47,11 @@ config_dir='/data/ds005625/code/connectomix/config'
 
 #### Participant-level
 ```bash
-$connectomix_cmd ${bids_dir} ${derivatives_dir}/connectomix participant --derivatives fmriprep="${derivatives_dir}/fmriprep" --config "${config_dir}/dsXXX_schaeffer100_participant_level_config.yaml"
+$connectomix_cmd ${bids_dir} ${derivatives_dir}/connectomix participant --derivatives fmriprep="${derivatives_dir}/fmriprep" --config "${config_dir}/ds005699_schaeffer100_participant_level_config.yaml"
 ```
 
 #### Group-level
 *Note:* this is an example of **Independent two-samples t-test**
 ```bash
-$connectomix_cmd ${bids_dir} ${derivatives_dir}/connectomix group --derivatives fmriprep="${derivatives_dir}/fmriprep" --config "${config_dir}/dsXXX_schaeffer100_group_level_config.yaml"
+$connectomix_cmd ${bids_dir} ${derivatives_dir}/connectomix group --derivatives fmriprep="${derivatives_dir}/fmriprep" --config "${config_dir}/ds005699_schaeffer100_group_level_config.yaml"
 ```
