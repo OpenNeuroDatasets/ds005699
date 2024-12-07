@@ -47,7 +47,7 @@ config_dir='/data/ds005625/code/connectomix/config'
 
 #### Participant-level
 ```bash
-$connectomix_cmd ${bids_dir} ${derivatives_dir}/connectomix participant --derivatives fmriprep="${derivatives_dir}/fmriprep" --config "${config_dir}/ds005699_participant_level_config.yaml"
+$connectomix_cmd ${bids_dir} ${derivatives_dir}/connectomix participant --derivatives fmriprep="${derivatives_dir}/fmriprep" --config "${config_dir}/participant_level_config.yaml"
 ```
 
 #### Group-level
@@ -56,5 +56,5 @@ $connectomix_cmd ${bids_dir} ${derivatives_dir}/connectomix participant --deriva
 - Since the dataset contains only four subjects (two subjects per group), the number of possible permutations is very low. For this reason, the number of computed permutations is set to 4, and connectomix can then complete the group level-analysis. Of course, realistic cases should not only include much more participants, but also a much larger number of permutations (see connectomix documentation).
 
 ```bash
-$connectomix_cmd ${bids_dir} ${derivatives_dir}/connectomix group --config "${config_dir}/ds005699_group_level_config.yaml"
+$connectomix_cmd ${bids_dir} ${derivatives_dir}/connectomix group --config "${config_dir}/group_level_config.yaml"
 ```
