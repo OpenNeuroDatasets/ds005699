@@ -1,0 +1,15 @@
+{
+  "RepetitionTime": 3,
+  "Resolution": "Template MNI152NLin6Asym (2.0x2.0x2.0 mm^3), curated by TemplateFlow 24.2.0",
+  "SkullStripped": false,
+  "SliceTimingCorrected": true,
+  "Sources": [
+    "bids:raw:sub-037/func/sub-037_task-restingstate_bold.nii.gz",
+    "bids::sub-037/func/sub-037_task-restingstate_from-orig_to-boldref_mode-image_desc-hmc_xfm.txt",
+    "bids::sub-037/func/sub-037_task-restingstate_from-boldref_to-T1w_mode-image_desc-coreg_xfm.txt",
+    "bids::sub-037/anat/sub-037_from-T1w_to-MNI152NLin6Asym_mode-image_xfm.h5",
+    "bids:templateflow:tpl-MNI152NLin6Asym/tpl-MNI152NLin6Asym_res-02_T1w.nii.gz"
+  ],
+  "StartTime": 1.462,
+  "TaskName": "restingstate"
+}
