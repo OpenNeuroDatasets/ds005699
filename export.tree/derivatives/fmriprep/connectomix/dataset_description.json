@@ -1,0 +1,9 @@
+{
+    "Name": "connectomix",
+    "BIDSVersion": "1.6.0",
+    "PipelineDescription": {
+        "Name": "connectomix",
+        "Version": "1.0.2",
+        "CodeURL": "https://github.com/ln2t/connectomix"
+    }
+}
